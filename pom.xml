@@ -6,7 +6,7 @@
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
 	
-	<version>0.0.2-SNAPSHOT</version> 
+	<version>0.0.3</version> 
 	
 	<name>maven-web-application</name>
 
@@ -22,13 +22,19 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http:172.31.22.207:9000/</sonar.host.url>
-		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</sonar.password>
+		<sonar.host.url>http:3.236.209.35:9000/</sonar.host.url>
+		<sonar.login>946cbd26665665e1bf4eb6caa2a984afca1cf4ef</sonar.login>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
-
+	
+            <repositories>
+            <repository>
+              <id>nexus</id>
+              <name>Tosin's Class30  Repository</name>
+                 <url>http://44.211.236.39:8081/repository/maven-proxy/</url>
+            </repository>
+    </repositories>
 	<dependencies>
 		
 		<dependency>
@@ -36,6 +42,7 @@
 			<artifactId>json</artifactId>
 			<version>20160212</version>
 		</dependency>
+
 		
 		<!-- test dependencies -->
 		<dependency>
@@ -95,20 +102,19 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://52.53.227.31:8191/landmark/repository/tesla-fe-releases/</url>
-	    </repository>
-	    
+	      <name>Tosin's Class30  Repository</name>
+		 <url>http://44.211.236.39:8081/repository/maven-releases/</url>
+            </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://52.53.227.31:8191/landmark/repository/tesla-fe-snapshots/</url>
+	      <name>Tosin's snapshot repository</name>
+		 <url>http://44.211.236.39:8081/repository/maven-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-app</finalName>
+		<finalName>tesla</finalName>
 		
 		<plugins>
 			<plugin>
