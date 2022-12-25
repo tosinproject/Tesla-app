@@ -107,8 +107,8 @@
             </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Tosin's snapshot repository</name>
-		 <url>http://44.211.236.39:8081/repository/maven-snapshots/</url>
+	      <name>Tesla-webapp-snapshot repository</name>
+		 <url>http://44.211.236.39:8081/repository/Tesla-webapp-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
