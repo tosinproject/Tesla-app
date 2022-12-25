@@ -6,7 +6,7 @@
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
 	
-	<version>0.0.3</version> 
+	<version>0.0.4</version> 
 	
 	<name>maven-web-application</name>
 
@@ -102,8 +102,8 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Tosin's Class30  Repository</name>
-		 <url>http://44.211.236.39:8081/repository/maven-releases/</url>
+	      <name>Tesla-webapp Repository</name>
+		 <url>http://44.211.236.39:8081/repository/Tesla-webapp/</url>
             </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
